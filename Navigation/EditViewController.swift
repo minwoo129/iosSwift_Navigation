@@ -19,6 +19,7 @@ class EditViewController: UIViewController {
     
     @IBOutlet var lblWay: UILabel!
     @IBOutlet var txMessage: UITextField!
+    @IBOutlet var swIsOn: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
