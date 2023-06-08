@@ -18,11 +18,33 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="메인화면" id="Ieh-i8-d6R"/>
+                    <navigationItem key="navigationItem" title="메인화면" id="Ieh-i8-d6R">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="SDQ-gm-3ZE">
+                            <connections>
+                                <segue destination="Jag-Mj-SJt" kind="show" id="LCD-3W-YRz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1063.3587786259541" y="3.5211267605633805"/>
+        </scene>
+        <!--수정화면-->
+        <scene sceneID="2Of-GA-j6I">
+            <objects>
+                <viewController id="Jag-Mj-SJt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ixb-5i-2H8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="YyE-Ed-ylT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="수정화면" id="Q7Q-LP-3F0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XDT-VS-B1D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1876" y="4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vri-aA-B6a">
