@@ -44,7 +44,7 @@
         <!--수정화면-->
         <scene sceneID="2Of-GA-j6I">
             <objects>
-                <viewController id="Jag-Mj-SJt" sceneMemberID="viewController">
+                <viewController id="Jag-Mj-SJt" customClass="EditViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ixb-5i-2H8">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,9 +54,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="완료"/>
+                                <connections>
+                                    <action selector="btnDone:" destination="Jag-Mj-SJt" eventType="touchUpInside" id="XnZ-aR-pqv"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIW-ws-KMr">
-                                <rect key="frame" x="16" y="110" width="274" height="21"/>
+                                <rect key="frame" x="41" y="109" width="274" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -67,6 +70,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="수정화면" id="Q7Q-LP-3F0"/>
+                    <connections>
+                        <outlet property="lblWay" destination="yIW-ws-KMr" id="22Y-X1-rv5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XDT-VS-B1D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,7 +98,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="72d-d5-l6E"/>
+        <segue reference="LCD-3W-YRz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
