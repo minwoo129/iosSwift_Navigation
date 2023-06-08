@@ -32,7 +32,7 @@
                     <navigationItem key="navigationItem" title="메인화면" id="Ieh-i8-d6R">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="SDQ-gm-3ZE">
                             <connections>
-                                <segue destination="Jag-Mj-SJt" kind="show" id="LCD-3W-YRz"/>
+                                <segue destination="Jag-Mj-SJt" kind="show" identifier="editBarButton" id="LCD-3W-YRz"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
